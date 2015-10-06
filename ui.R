@@ -30,13 +30,14 @@ shinyUI(fluidPage(
            
     ), #column
     column(4,
-           
+           h3("test output"),
+           verbatimTextOutput("testout"),
            h3("Risk of treated rejection is:"),
-           verbatimTextOutput("risk"),
+           #verbatimTextOutput("risk"),
            h3("The observed risk of treated rejection in the training set was:"),
-           verbatimTextOutput("train"),           
-           h3("The observed risk of treated rejection in the test set was:"),
-           verbatimTextOutput("test")  
+           #verbatimTextOutput("train"),           
+           h3("The observed risk of treated rejection in the test set was:")
+           #verbatimTextOutput("test")  
     ) #column
   ), #fluidRow
   fluidRow(
